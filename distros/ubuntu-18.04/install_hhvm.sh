@@ -1,9 +1,9 @@
 #---------------------------------------------------------------------
-# Function: InstallBind
-#    Install bind DNS server
+# Function: InstallHHVM
+#    Install HHVM
 #---------------------------------------------------------------------
-InstallBind() {
-  echo -n "Installing Bind9... ";
-  apt-get -y install bind9 dnsutils > /dev/null 2>&1
+InstallHHVM() {
+  echo -n "Installing HHVM (Hip Hop Virtual Machine)... "
+  apt-get -y install hhvm
   echo -e "[${green}DONE${NC}]\n"
 }
